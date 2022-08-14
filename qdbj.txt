@@ -1,0 +1,95 @@
+shell命令
+1.cd 
+2.cd ..
+3.cd .
+4..
+5 ..
+6.mkdir text/ 新建文件夹
+7.touch 1.txt 新建文件
+8.rm 删除
+9.入门-人防强制删除
+1.ls 查看文件
+2.ls -la 查看所有文件（包括隐藏的）
+3.ll 查看文件详细信息
+
+
+
+
+git 命令
+1.配置用户名和邮箱： git config --global user.name '康'； git config --global user.email '1336738527@qq.com'
+2.git init :新建一个.git文件（管理）
+3.git status :查看git未被追踪的文件
+4.git add . 添加追踪文件
+5.git rm --cached index.html  取消追踪文件
+6.git commit 提交或者保存追踪文件
+7.git commit -m 提交或者保存追踪文件
+8.git commit -am 添加并且提交或者保存追踪文件
+9.git log log追踪的多种方法
+10.git log -p -2 查看最近2次
+11.git log --oneline 一行显示
+12.git log --graph 多分枝版本线图
+13.git log --graph --oneline
+14.git log --pretty
+15.git log --pretty=oneline
+16.git log --pretty=format:"%h- %an, %a:%s"
+17.git log --author="康"
+
+18.git diff 查看文件修改了哪些
+19.git diff --stage：   add之后查看不同
+
+20.git rm  [file] 文件删除
+21.git mv [old new] 文件重命名
+22.gir mv [file] stuff/pretty.txt 文件移动
+
+23.gitignore 生成.gitignore文件
+24./node_modules 忽略node_modules文件夹下所有文件
+25.*.log 忽略.log结尾的文件
+26.*.zip
+27.git rm -r --cached 文件名 剔除忽略的文件
+
+
+28.git checkout -- [filename]恢复到上一次的状态 必须是add，追踪的文件
+29. git reset --hard Head^ 回退到上一个版本
+30.git reset --hard Head^^ 回退到上上一个版本
+31.git reset --hard [hash号]
+32.git reflog指针理解
+
+33.git log
+34.git checkout[hash] -- [filename](回退时会保留所有版本)
+
+35.建立切换删除分枝
+36.git branch [name] 建立分枝
+37.git checkout [branch name] 去指定分枝下
+38.git checkout -b [branch name] 去主分支下操作，快捷创建和去指定分枝下git checkout -b v3
+39.git branch -d [name] 删除分枝
+40.git branch -D [name] 强制删除分枝
+
+41.git merge [branch name] 合并分枝
+
+42.解决冲突
+43.git merge [branch name]
+44. git status 查看冲突原因
+45.git merge --abort 忽略合并
+
+46.下载
+47.git clone namefil    //git remote add origin 链接仓库   git remote查看仓库
+48.上传 git push
+49.git push -u origin
+50.git push --all
+46.git commit
+52.git branch -a 查看分枝
+
+53.git pull 从仓库更新到本地
+54.git fetch
+55.git merge
+删除远端分枝
+56.git push origin --delete[branch name]
+57.git remote set-url origin 远端分枝位置
+
+47.快转机制
+48.git merge branchname -no-ff 不适应快转机制的分枝合并
+49.更多分枝合并的方法
+50.git merge --no-ff --no-commir[branchname]
+
+
+
