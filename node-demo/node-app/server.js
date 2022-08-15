@@ -5,11 +5,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 // 实例化
 const app = express();
-// connect database
-const dbURL = "mongodb://127.0.0.1:27017/nodeapi";
-mongoose.connect(dbURL)
+// DB config
+const db = require("./config/keys").mongoURL;
+// connect to mongodb
+// const dbURL = "mongodb://127.0.0.1:27017/nodeapi";
+mongoose.connect(db)
 
-    .then(() => console.log("connect database"))
+    .then(() => console.log("mongodb connect"))
     .catch(err => console.log(err))
 
 // 设置路由
